@@ -1,0 +1,32 @@
+2.0:
+Cos’è nodemon? e come si usa? Nodemon è una libreria express usata per far ripartire in automatico il server dopo ogni modifica ai file
+In quale cartella vanno inserite le viste PUG? views / pug
+Quale estensione hanno i file che contengono le viste PUG? .pug
+Come si imposta un engine module in Express?
+Qual è il comando per dire a express di elaborare una specifica pagina PUG e inviarla al client?  res.render('pagina');
+Cosa succede se in una riga di un template PUG non inserisco il nome di un tag (es: .ciao)? crea automaticamente un div
+Come si specifica un id css in PUG? .id
+Come si specifica una classe css in PUG? .classe
+Come si innesta un tag dentro un altro? (es: <div><p>ciao</p></div>)
+Come si dice a Express quale cartella conterrà tutti i file statici? app.use(express.static(__dirname + '/public'));
+In cosa viene tradotto il seguente codice PUG
+    a. article.contenitore saluti al mondo: artcolo prende il css del contenitore e ci viene scritto dentro saluti al mondo
+    
+    
+2.1:
+Come si lega un template PUG ai dati generati dall’applicazione Express?
+Come si passano dei valori dall’applicazione Express al template PUG?   #{nomeVariabile} es: #{titolo}
+Cos’è JSON?     JSON (JavaScript Object Notation) è un formato di rappresentazione dati molto diffuso
+Come si rappresenta un oggetto in JSON?     {"oggetto": "Valore"}
+Come si rappresenta un vettore in JSON?     []
+Come si rappresenta un vettore di oggetti in JSON?      [{oggetto1}, {oggetto2}]
+Come si importa un file JSON all’interno di una variabile in Node?      const nome = require('./nome.json')
+Come si ottiene un valore da un oggetto JSON (Supponendo di aver caricato l’oggetto in una variabile)?      res.render(){people: "valore"}
+Come si ottiene il valore da un vettore JSON (es il vettore profiles definito sopra)?       res.render(){people: people.profiles}
+Come si realizza un ciclo in PUG?
+- var values = [];
+ul
+  each val in values
+    li= val
+  else
+    li There are no values
